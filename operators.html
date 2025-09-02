@@ -15,7 +15,7 @@
         c--;
         c++;
         c++;
-        c--;
+        c--;                            //uniary operator
         document.write(c+"<br>");
     </script>
 
@@ -23,8 +23,53 @@
     <script>
         var x=10;
         var y=3;
-        x+=y;
+        x+=y;                         //binary operator
         document.write(x+"<br>");
     </script>
+
+    <!--Comparision Operator <,>,<=,>=,==,=== -->
+    <script>
+        var p=13;
+        var q="13";
+        if(p==q)//== only value check karto ,datatype check kart nahi
+    {           //=== both value ,datatype check kart
+        document.write("true");
+    }
+    else{
+         document.write("false");
+    }
+    </script>
+
+ <!--Logical operator -->
+ <script>
+    var a=19;
+    if(a>=19 && a<=100)
+ {
+            document.write("eligible for vote");
+
+ }
+ else
+ {
+            document.write("not");
+
+ }
+    document.write("<br>");
+
+ var day="Sunday";
+ if(day==="Sunday" || day==="Monday")
+ {
+    document.write("its weekend");
+ }
+ else
+ {
+    document.write("its weekday");
+ }
+     document.write("<br>");
+
+
+ var age=21;
+ var re=(age<=21)?"eligible for vote" : "Not eligible for vote";  //tinary operator
+ document.write(re);
+ </script>
 </body>
 </html>
