@@ -3,19 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>var_let_const_datatype</title>
 </head>
 <body>
     <script>
-        var fname="vaishna";
+
+        var fname="vaishna";//Function Level
         var fname="Adat";//redeclare allow
         fname="Sonu";//re-assign allowed
 
-        let lname="Roy";
+        let lname="Roy";//Block Level
        // let lname="Soy";redeclare not allow
        lname="Soy";//re-assign allowed
 
-        document.write(lname);
+       const pi=3.14;//Block Level
+       //const pi=123.4; redeclare not allow
+       //pi=123; re-assign not allowed
+        document.write(pi);
+    </script>
+    <script>
+        //Global scope
+        var x=10;
+        let y=20;
+        const z=30;
+        function scopexample()
+        {   //Function scope
+            var x=1;
+            let y=2;
+            const z=3;
+            if(true)
+        {
+            var x=11;
+            let y=22;
+            const z=33;
+            document.write(x);
+            document.write(y);
+            document.write(z);
+            document.write("<br>");//11,22,33
+        }
+            document.write(x);
+            document.write(y);
+            document.write(z);
+            document.write("<br>");//1,2,3
+        }
+            document.write(x);
+            document.write(y);
+            document.write(z);
+            document.write("<br>");//10,20,30
     </script>
 </body>
 </html>
