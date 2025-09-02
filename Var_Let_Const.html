@@ -19,7 +19,7 @@
        const pi=3.14;//Block Level
        //const pi=123.4; redeclare not allow
        //pi=123; re-assign not allowed
-        document.write(pi);
+        //document.write(pi);
     </script>
     <script>
         //Global scope
@@ -33,23 +33,28 @@
             const z=3;
             if(true)
         {
-            var x=11;
-            let y=22;
-            const z=33;
-            document.write(x);
-            document.write(y);
-            document.write(z);
-            document.write("<br>");//11,22,33
+            var x=11;//block level
+            let y=22;//block level
+            const z=33;//block level
+            
+            document.write(x+"<br>");
+            document.write(y+"<br>");
+            document.write(z+"<br>");
+            document.write("<br>");
+            //11,22,33
         }
-            document.write(x);
-            document.write(y);
-            document.write(z);
-            document.write("<br>");//1,2,3
+            document.write(x+"<br>");
+            document.write(y+"<br>");
+            document.write(z+"<br>");
+            document.write("<br>");
+            //11,2,3
         }
-            document.write(x);
-            document.write(y);
-            document.write(z);
-            document.write("<br>");//10,20,30
+        scopexample();
+            document.write(x+"<br>");
+            document.write(y+"<br>");
+            document.write(z+"<br>");
+            document.write("<br>");
+            //10,20,30
     </script>
 </body>
 </html>
