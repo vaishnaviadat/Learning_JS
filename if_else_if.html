@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_else_if</title>
+</head>
+<body>
+   <script>
+    //take input from user
+     var percentage=prompt("Enter your marks");
+     percentage=parseInt(percentage);
+     if(percentage>80 && percentage<=100)
+     {
+        document.write("you are destinction");
+     }else if(percentage>=60 && percentage<80)
+     {
+        document.write("you are 1st class");
+     }
+     else if(percentage>=40 && percentage<60)
+     {
+        document.write("you are 2nd class");
+     }
+     else{
+        document.write("fail");
+     }
+   </script>
+
+   <script>
+    var month=prompt("Enter month");
+    month=parseInt(month);
+   
+    if(month==4 || month==6 || month==8 || month==10||month==12)
+   {
+    document.write("number of days 30");
+   }
+   else if(month==1 || month==3 || month==5 || month==7||month==9 ||month==11)
+   {
+        document.write("number of days 31");
+   }
+   else{
+        document.write("number of days 29 0r 28");
+        }
+   </script>
+</body>
+</html>
