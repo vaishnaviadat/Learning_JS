@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Loop</title>
+</head>
+<body>
+    <script>
+        var mixarray=[100,"vaishna","true",106,20.30];
+        var mixarray2=[101,"adat",111,999];
+        document.write(mixarray + mixarray2);
+        document.write("<br>");
+    </script>
+    <script>
+        
+        var arr=[10,20,30,40,50,60];
+        sum=0;
+        document.write("<h2>Using for loop</h2><ul>")
+        for(var a=0;a<=5;a++)
+    {
+        document.write("<li>" + arr[a] + "</li>");
+        sum=sum+arr[a];
+    }
+    document.write("</ul>");
+    document.write("sum is="+sum+"<br>");
+    </script>
+
+    <script>
+        var arr2=[10,20,30,40,50,60];
+        var a1=0;
+        sum1=0;
+        document.write("<h2>Using While loop</h2><ul>");
+
+        while(a1<=5)
+    {
+            document.write("<li>" + arr2[a1] + "</li>");
+            sum1=sum1+arr2[a1];
+            a1++;
+    }
+    document.write("</ul>");
+    document.write("sum is="+sum1+"<br>");
+    </script>
+
+    <script>
+        var arr3=[10,20,30,40,50,60];
+        var a2=0;
+        sum2=0;
+        document.write("<h2>using do-while loop</h2><ul>");
+        do{
+            document.write("<li>" + arr3[a2]+ "</li>");
+            sum2=sum2+arr3[a2];
+            a2++;
+        }
+        while(a2<=5);
+        document.write("</ul>");
+        document.write("sum is="+sum2+"<br>");
+        
+    </script>
+</body>
+</html>
