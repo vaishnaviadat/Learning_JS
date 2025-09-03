@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <script>
+        var a=["vaish",21,"Bca","Software Developer"];
+        document.write(a+"<br>");
+        a[2]="BSC";//array modify
+        document.write(a+"<br>");
+        delete a[1];//array delete
+        document.write(a+"<br>");
+
+    </script>
+
+    <script>
+        var b=["abc","qwe","rty","ghj","hjk"];
+        document.write(b+"<br>");
+        b.sort();//sort ascending
+        document.write(b+"<br>");
+        b.reverse();//sort descending
+        document.write(b+"<br>");
+
+
+        b.pop();//remove last value
+        b.pop();//remove last 2nd value
+        document.write(b+"<br>");
+        b.push("vaishnaa");//add last value
+        document.write(b+"<br>");
+
+
+        b.shift();//remove starting value
+        document.write(b+"<br>");
+        b.unshift("adat");//add starting value
+        document.write(b+"<br>");
+</script>
+<script>
+    var c=["vaish","adat","riya"];
+    var d=["geeta","sita"];
+    var f=["prisha","piyaa","ram"];
+    var e=c.concat(d);//concat three string
+    document.write(e+"<br>"); 
+    var e1=f.concat(e);
+    var f1=e1.join("/");
+    document.write(f1+"<br>");
+
+
+</script>
+</body>
+</html>
