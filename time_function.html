@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time function</title>
+</head>
+<body>
+    <h3>Digitl Clock</h3>
+    <h1 id="clock"></h1>
+
+    <h1>Counter</h1>
+    <h1 id="count"></h1>
+    <button onclick="stopcounter()">stop</button>
+    <h3 id="mgs">hiii</h3>
+    <script>
+        setTimeout(function(){
+            document.getElementById("mgs").innerHTML="hello";
+        },5000);
+    </script>
+    <script>
+        function showtime(){
+            let now=new Date();
+            let time=now.toLocaleTimeString();
+            document.getElementById("clock").innerHTML=time;
+        }
+        setInterval(showtime,1000);
+    </script>
+
+</body>
+</html>
